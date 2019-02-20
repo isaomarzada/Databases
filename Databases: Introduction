@@ -1,0 +1,68 @@
+1. string
+2. Number
+3. Date
+4. Number
+5. Price
+
+Explain when a database would be used. Explain when a text file would be used.
+
+A database would be used to store a large amount of data that can be read and changed quickly.
+We use text files to translate since computers store databases in a format that is not readable by humans.
+
+Describe one difference between SQL and other programming languages.
+
+The difference between SQL and other programming languages like python, javascript, java, etc.
+is that with those languages, you can do many cool things like make games, make programs to
+help you with your taxes, and solve math problems. These are all general purpose languages. SQL
+is very different from these languages. It does one thing, which defines queries. These queries
+are similar to programs, but you don't use them to make video games or web servers. However
+queries are really good at getting information from databases. Let's say you are making a website
+like wikipedia. You need to have some kind of web server to respond to requests from the browser.
+You can use Python to tackle this problem. When Python needs to figure out what article the user
+is trying to view, it will look up where the article is in that database. It will use SQL to 
+do that.
+
+In your own words, explain how the pieces of a database system fit together at a high level.
+
+Databases are organized like a table that has columns and rows. Each row contains data pertaining
+to an entry while the columns define what the data represents. With the rowns and columns, table
+cells are formed which each have a piece of data in it, which is able to be queried.
+
+Explain the meaning of table, row, column, and value.
+
+A table is used to hold a set or collection of data. A row is a horizontal collection of data in a table.
+A column in a table is a vertical collection of data that define what the data represents. A a value 
+is a piece of data contained in a table cell.
+
+List three data types that can be used in a table.
+
+Number, string, boolean
+
+Given this payments table, provide an English description of the following queries and include their results:
+
+a) This query selects the dates and each amount for each date from the payments table.
+
+b) This query selects amounts that are greater than 500 from the payments table.
+
+c) This query selects every column in the payments table whose payee is Mega Foods.
+
+Given this users table, write SQL queries using the following criteria and include the output:
+
+The email and sign-up date for the user named DeAndre Data:
+
+SELECT email, sign-up
+FROM users
+WHERE name = 'DeAndre Data';
+
+The user ID for the user with email 'aleesia.algorithm@uw.edu':
+
+SELECT userid
+FROM users
+where email = 'aleesia.algorithm@uw.edu';
+
+All the columns for the user ID equal to 4:
+
+SELECT *
+FROM users 
+WHERE userid = 4;
+
