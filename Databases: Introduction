@@ -54,11 +54,17 @@ SELECT email, sign-up
 FROM users
 WHERE name = 'DeAndre Data';
 
+email                      sign-up
+deandred@bloc.io           02-20-2018
+
 The user ID for the user with email 'aleesia.algorithm@uw.edu':
 
 SELECT userid
 FROM users
 where email = 'aleesia.algorithm@uw.edu';
+
+userid              
+11345
 
 All the columns for the user ID equal to 4:
 
@@ -66,3 +72,5 @@ SELECT *
 FROM users 
 WHERE userid = 4;
 
+userid                name                    email                     signup
+4                     Adrian Peterson         adrianpeterson@bloc.io    02-20-2018
